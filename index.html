@@ -10,23 +10,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="main-block">
-            <p class="title">Bella cross </p>
-            <p class="status">online</p>
-        </div>
-    </header>
+
     <main>
         <div class="page">
             <div class="product-block">
                 <div class="product-wrapper">
-                    <img class="product-img" src="/img/2.webp" alt="" width="100px">
+                    <img class="product-img" src="img/1.webp" width="100px">
                     <h5 class="product-title">AJ - model OGB</h5>
                 </div>
             </div>
             <p class="product-desc">Изготовленным на
                  заказ логосом Oem бренд кроссовки для баскетбола Aj 1 на
-                  низком каблуке в стиле ретро; Обувь из натуральной кожи и Aj1 мужские кроссовки</p>
+                  низком каблуке в стиле ретро; Обувь из натуральной кожи и Aj1 мужские кроссовки
+                </p>
         </div>
         <div class="form-block">
             <p class="fb-title">ОФОРМИТЬ ЗАКАЗ</p>
@@ -37,16 +33,19 @@
                     <input type="tel" name="" id="" placeholder="+7(800)..........."><br>
                     <input type="email" placeholder="ivanov@mail.ru"><br>
                     <input type="text" placeholder="Москва, 105187. Щербаковская улица, 53"><br>
-                    <select name="" id="" style="border-radius: 0 0 34px 34px;">
-                        <option value="0">AJ - model OGB</option>
-                        <option value="1">AJ - model WG</option>
-                        <option value="2">AJ - model WG</option>
+                    <select name="" id="" >
+                        <option value="0"><p class="select-values">AJ - model OGB</p></option>
+                        <option value="1"><p class="select-values">AJ - model OGB</p></option>
+                        <option value="2"><p class="select-values">AJ - model OGB</p></option>
 
                     </select><br>
                     <div class="radio-block">
-                        <div>Оплата Картой</div>
-                        <div>Оплата Наличными</div>
+                        <div class="b1"><p> Оплата Картой</p></div>
+                        <div class="b2"><p>Оплата Наличными</p></div>
                     </div>
+                    <button class="btn-buy">
+                        <p>ЗАКАЗАТЬ</p>
+                    </button>
                     
                 </form>
             </div>
@@ -60,45 +59,7 @@
         padding: 0;
         font-family: 'Roboto', sans-serif;
     }
-    .main-block{
-        width: 100%;
-        height: 70px;
-        border-bottom: 1px solid;
-        display: flex;
-    }
-    .title{
-        width: 960px;
     
-        
-        display: block;
-
-        
-        font-weight: 500;
-        font-size: 32px;
-        line-height: 70px;
-        
-       
-        text-align: center;
-
-        color: #FFFFFF;
-        text-shadow: 1px 1px 0px #69CE23, -1px -1px 0px #69CE23, 2px -1px 0px #69CE23, -1px 2px 0px #69CE23, -1px 2px 0px #69CE23, -1px 2px 0px #69CE23;
-    }
-    .status{
-        
-        width: 960px;
-        height: auto;   
-
-        display: block;
-        
-        font-weight: 500;
-        font-size: 32px;
-        line-height: 70px;
-      
-        text-align: center;
-
-        color: #000000;
-
-    }
     main{
         display: flex;
         width: 100%;
@@ -112,8 +73,50 @@
         width: 1000px;
 
     }
+    .product-desc{
+        
+        margin-left: 126px ;
+        margin-bottom: 175px;
+        width: 865px;
+        height: 115px;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 38px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #000000;
+    }
+    .product-wrapper{
+        margin-top: 230px;
+        width: 500px;
+        height: 500px;
+
+        background: rgb(255, 255, 255);
+        border-radius: 48px;
+    }
+    .product-img{
+        padding: 14px 17px;
+        width: 464.49px;
+        height: 361.72px;
+
+    }
+    .product-title{
+
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 38px;
+        
+        
+        text-align: center;
+
+        color: #000000;
+    }
     .form-block{
-        margin-top: 30px;
         margin-right: 104px;
         padding-left: 77px;
         padding-right: 77px;
@@ -122,14 +125,14 @@
         background: rgba(255, 255, 255, 0.88);
         box-shadow: 0px 0px 100px 50px #ffffff;
         border-radius: 129px;
-        border: 1px solid;
+        
     }
     .form-wrapper{  
         display: block;
         margin: auto;
     }
     .fb-title{
-        margin-top: 130px;
+        margin-top: 70px;
         margin-bottom: 96px;
         font-weight: 900;
         font-size: 36px;
@@ -140,7 +143,58 @@
         -webkit-text-fill-color: transparent;
         background-clip: text;
     }
+    .radio-block{
+        display: flex;
+    }
+    .b1{
+        margin: 2px;
+        width: 270px;
+        height: 68px;
+        text-align: center;
+        line-height: 68px;
+        background: #F0F0F0;
+        border-radius: 0px 0px 0px 36px;
 
+    }
+    .b1 p {
+        font-weight: 600;
+        font-size: 24px;
+
+        background: linear-gradient(267.88deg, #0DCC20 36.59%, #C3C70A 62.79%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .b2{
+        margin: 2px;
+        width: 270px;
+        height: 68px;
+
+        background: linear-gradient(266.44deg, #C3C70A 1.05%, #0DCC20 99.26%);
+        border-radius: 0px 0px 36px 0px;
+        
+
+    }
+    .b2 p {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 68px;
+        
+        text-align: center;
+
+        color: #FFFFFF;
+
+    }
+    .select-values{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 68px;
+
+        text-align: center;
+
+        color: #FFFFFF;
+
+    }
     input , select , option{
         margin: 1px;
         border: none;
@@ -151,8 +205,19 @@
         background: #F0F0F0;
         
     }
+    input{
+        font-style: italic;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+        
+        text-align: center;
+
+        color: #0DCC20 ;
+        
+    }
     
-    ::placeholder{
+    ::placeholder , select{
         font-style: italic;
         font-weight: 300;
         font-size: 24px;
@@ -164,6 +229,25 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
+    }
+    .btn-buy{
+
+        display: block;
+        border: none;
+        margin: 58px auto;
+        width: 282px;
+        height: 97px;
+
+        background: linear-gradient(263.25deg, #0DCC20 0%, #C3C70A 100%);
+        border-radius: 48.5px;
+    }
+    .btn-buy p  {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 97px;
+
+        color: #FFFFFF;
     }
 </style>
 </html>
